@@ -35,6 +35,11 @@ const Navbar = () => {
             About
           </NavLink>
         </li>
+        <li className="nav-link">
+          <NavLink activeClassName="active" to="/buy">
+            Buy Me A Coffee
+          </NavLink>
+        </li>
       </ul>
       {nav ? (
         <ul id="navbarSupportedContentMobile">
