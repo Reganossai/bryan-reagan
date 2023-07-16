@@ -18,7 +18,7 @@ const initialState = {
         return {
           ...state,
           quantity: state.quantity - 1,
-          price: state.price - 15, // Decrease price by 15 for each quantity decrement
+          price: state.price, // Decrease price by 15 for each quantity decrement
         };
       default:
         return state;
