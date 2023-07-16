@@ -6,9 +6,10 @@ import { faMinus,faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Buy = ({ quantity, price, incrementQuantity, decrementQuantity }) => {
   return (
-    <div className="bgg">
+    <div className="buy-div" >
       <Navbar />
-      <div className="bg">
+      <div className="bg"></div>
+      <div className="bgg">
         <p>
           Hello there, I made a lot of effort to create a kind of road map for
           aspiring web developers to have a straight foward idea on the steps
@@ -25,10 +26,14 @@ const Buy = ({ quantity, price, incrementQuantity, decrementQuantity }) => {
             visiting this page.
           </b>
         </p>
+        
+        <div className="inc-dec">
         <p>Cup(s) of coffee: {quantity}</p>
-        <p>price: {price}</p>
-        <button onClick={incrementQuantity}><FontAwesomeIcon icon={faPlus}/></button>
-        <button onClick={decrementQuantity}><FontAwesomeIcon icon={faMinus}/></button>
+        <button onClick={incrementQuantity} id="inc" className="btn btn-outline-dark"><FontAwesomeIcon icon={faPlus} /></button>
+        <button onClick={decrementQuantity}id="dec" className="btn btn-outline-dark"><FontAwesomeIcon icon={faMinus} className="dec"/></button>
+      </div>
+        <p>price: {price} NGN</p>
+        <button className="btn btn-danger">Buy Coffee</button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 const initialState = {
     quantity: 0,
-    price: 15,
+    price: 1000,
   };
   
   const rootReducer = (state = initialState, action) => {
