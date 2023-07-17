@@ -15,8 +15,7 @@ const Footer = () => {
             This website provides a tutorial to educate interns with low or no
             level or web development knowledge so as to give them a basic
             knowledge of how to code, how to develop websites or web apps and
-            the basic steps involved in web development. Sit tight and have a
-            wonderful learning experience.
+            the basic steps involved in web development.
           </h4>
     
         </div>
@@ -25,7 +24,7 @@ const Footer = () => {
             <span>
               <FontAwesomeIcon icon={faCopyright} />
             </span>
-            2023 Next-Itservices{" "}
+            2023 Next-Itservices
           </h1>
         </div>
         <hr className="hirrr" />

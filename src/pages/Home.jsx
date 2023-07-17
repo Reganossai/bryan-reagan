@@ -4,6 +4,7 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import dom from "../assets/dom.png";
+import git from "../assets/git.png";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
 
         <h1>
           Firstly, prior knowledge of the tools and processes involved in web
-          develpment is required
+          development is required.
         </h1>
         <h2>Tools</h2>
         <p> Here's a walk through of the tools needed.</p>
@@ -65,11 +66,7 @@ const Home = () => {
         </a>
         <p>
           On the left hand side, there are detailed sub modules to help you gain
-          the knowledge you require in{" "}
-          <span>
-            <b>html</b>
-          </span>
-          .
+          the knowledge you require in <b>html</b>.
         </p>
         <img src={html} alt="html" />
         <p>
@@ -145,7 +142,7 @@ const Home = () => {
         </p>
 
         <h6>CHAPTER TWO</h6>
-        <h1>The DOM</h1>
+        <h3>The DOM</h3>
         <p>The <b>DOM</b> defines a standard for accessing documents. The <b>DOM</b> stands for "Document Object Model" and it is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</p>
      
         <a href="https://www.w3schools.com/js/js_htmldom.asp#:~:text=The%20DOM%20defines%20a%20standard,and%20style%20of%20a%20document.%22">
@@ -154,6 +151,24 @@ const Home = () => {
 
         <p>On the left hand side, there are detailed sub modules to explain what the DOM is all about and its significance.</p>
        <img src={dom} alt="dom"/>
+
+       <h3>Git and Github</h3>
+        <p>I'll take you through a scenario. As a programmer, when you're done with your code and it's saved and it's working well on your browser. A situation may arise when you need to make changes to the website through your code and unfortunately your laptop containing your code is faulty or basically you can't get access to that code . You become stuck. This is where <b>github</b> comes in handy. <b>Github</b> is more like a store for your codes and important files you need to keep safe instead of just having them on your computer which can get lost when the computer becomes faulty. Keeping your code in <b>github</b> ensures that you have a backup remote store in cases you might need to have access to that code later in the future . </p>
+        <p> With that being said, you might be wondering how you get your codes to <b>github</b>. This is done using <b>git</b> commands.</p>
+        <p><b>Git</b> is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.</p>
+        <p> <b>Git</b> and <b>GitHub</b> are two different entities. <b>Git</b> is a version control system that allows developers to track changes in their code. <b>GitHub</b> is a web-based hosting service for <b>git</b> repositories. In simple terms, you can use <b>git</b> without <b>Github</b>, but you cannot use <b>GitHub</b> without <b>Git</b>.</p>
+        <a href="https://www.w3schools.com/git/default.asp?remote=github">Here's a link to study more on git and github</a>
+        <p>
+          On the left hand side, there are detailed sub modules to help you gain
+          the knowledge you require in <b>git</b> and <b>github</b> and how to use <b>git</b> commands to send your code to your <b>github</b> repositories or storage.
+        </p>
+        <img src={git} alt="git"/>
+        <p>
+          <b>
+            Please do not skip any of the sub modules. Follow them one after one
+            in that order.
+          </b>
+        </p>
       </div>
       <Footer />
     </div>
