@@ -3,8 +3,41 @@ import Navbar from "../components/Navbar";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus,faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import {  FlutterWaveButton, closePaymentModal } from 'flutterwave-react-v3';
 
 const Buy = ({ quantity, price, incrementQuantity, decrementQuantity }) => {
+
+
+  const config = {
+    public_key: 'FLWPUBK-62dbbc23f0bc909463b116528ca791c2-X',
+    tx_ref: Date.now(),
+    amount: 1000,
+    currency: 'NGN',
+    payment_options: 'card,mobilemoney,ussd',
+    customer: {
+      email: 'ossaireagano@gmail.com',
+      phone_number: '08108315163',
+      name: 'Reagan Ossai',
+    },
+    customizations: {
+      title: 'Buy Reagan A Coffee',
+      description: 'Coffee for Reagan',
+      logo: 'https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg',
+    },
+  };
+
+
+const fwConfig = {
+...config,
+text: 'Buy Coffee',
+callback: (response) => {
+console.log(response);
+closePaymentModal() // this will close the modal programmatically
+},
+onClose: () => {},
+};
+
   return (
     <div className="buy-div" >
       <Navbar />
@@ -33,7 +66,9 @@ const Buy = ({ quantity, price, incrementQuantity, decrementQuantity }) => {
         <button onClick={decrementQuantity}id="dec" className="btn btn-outline-dark"><FontAwesomeIcon icon={faMinus} className="dec"/></button>
       </div>
         <p>price: {price} NGN</p>
-        <button className="btn btn-danger">Buy Coffee</button>
+        <div id="remy">
+        <FlutterWaveButton {...fwConfig} />
+      </div>
       </div>
     </div>
   );

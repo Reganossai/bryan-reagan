@@ -1,7 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import Logo from "../assets/logo.avif";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -12,7 +10,7 @@ const Footer = () => {
           <img src={Logo} className="kink" alt="kink" />
 
           <h4>
-            This website provides a tutorial to educate interns with low or no
+            This website provides a tutorial to educate aspiring developers with low or no
             level or web development knowledge so as to give them a basic
             knowledge of how to code, how to develop websites or web apps and
             the basic steps involved in web development.
@@ -20,11 +18,9 @@ const Footer = () => {
     
         </div>
         <div className="kirk">
+          <h1>Created By Reagan Ossai</h1>
           <h1 className="koko">
-            <span>
-              <FontAwesomeIcon icon={faCopyright} />
-            </span>
-            2023 Next-Itservices
+           <a href="https://reaganossai.netlify.app">https://reaganossai.netlify.app</a>
           </h1>
         </div>
         <hr className="hirrr" />
@@ -34,6 +30,9 @@ const Footer = () => {
           </h1>
           <h1>
             <Link to="/about">About</Link>
+          </h1>
+          <h1>
+            <Link to="/buy">Buy Me a Coffee</Link>
           </h1>
         </div>
       </nav>

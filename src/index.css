@@ -12,18 +12,12 @@
 
 .navbar img {
 	width: 100px;
-  height: 50px;
+  height: 70px;
 	border-radius: 10px;
+  margin: 10px 0px 0px 0px;
 }
 
 
-.navbar-brand {
-	color:cadetblue;
-	font-size: 20px;
-	font-family: monospace;
-	margin: 10px 0px 0px 40px;
-  text-decoration: none;
-}
   
 
 #navbarSupportedContent {
@@ -82,6 +76,7 @@
   margin: 10px 0px 10px 0px;
 }
 
+
 .body-content img{
   margin: 10px 0px 10px 0px;
 }
@@ -114,8 +109,6 @@
   margin-top: 60px;
   ;
 }
-
-
 
 
 .foot-linko {
@@ -158,7 +151,7 @@
 }
 
 .olo {
-  margin: 20px 100px 0px 0px
+  margin: 0px 100px 0px 0px
 }
 
 .olo a {
@@ -171,11 +164,14 @@
 .kirk h1{
   font-size: 15px;
   margin: 20px 20px 0px 0px ;
+  text-decoration: none;
+  color: pink;
+
 }
 
 h6{
   text-align: center;
-  margin: 40px 0px 20px 0px;
+  margin: 50px 0px 50px 0px;
   font-size: 25px;
 }
 
@@ -192,10 +188,10 @@ h6{
 .bgg{
   position: absolute;
   top: 100px;
-  z-index: 99;
+  z-index: 1;
   width: 1200px;
   font-size: 20px;
-  margin: 0px 0px 0px 50px;
+  margin: 20px 0px 0px 50px;
 }
 
 .bg{
@@ -205,7 +201,8 @@ h6{
   background-position: center;
   object-fit: fill;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.5;
+  margin-top: 20px;
 }
 
 
@@ -237,9 +234,11 @@ h6{
 
 @media only screen and (max-width: 800px) {
   .navbar{
-    width: 100%;
-    margin: 10px 0px 20px 10px;
-    border-bottom: 1px dotted black;
+    width: 435px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: orange;
+   
   }
   .hir{
     display: none;
@@ -281,7 +280,7 @@ h6{
 .body-content p{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-  width: 360px;
+  width: 370px;
 }
 
 .body-content a{
@@ -293,28 +292,36 @@ h6{
 .body-contentt p{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-  width: 200px;
+  width: 360px;
   margin:10px 40px 10px 20px;
 }
 
+.bgg p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  width: 360px;
+  margin:10px 40px 10px 20px;
+
+}
+
 .body-content img{
-  width: 330px;
+  width: 350px;
   height: 270px;
   margin: 20px 0px 20px 0px;
 }
 
 
 .body-contentt img{
-  width: 330px;
+  width: 350px;
   height: 270px;
   margin: 20px 0px 0px 20px;
 }
 
 .navbar img {
 	width: 80px;
-  height: 40px;
+  height: 60px;
 	border-radius: 10px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 20px 10px;
 }
 
 
@@ -324,6 +331,12 @@ h6{
 	font-family: monospace;
 	margin: 10px 0px 0px 10px;
   text-decoration: none;
+}
+
+
+h6{
+  margin: 50px 40px 50px 0px;
+  font-size: 25px;
 }
 
 
@@ -338,17 +351,18 @@ h6{
   z-index: 99;
   width: 100%;
   height: 120vh;
-  background-color:skyblue;
+  background-color: #F2D2BD;
+  
 }
 
 
 #navbarSupportedContentMobile li {
-  margin: 20px 0px 0px 5px;
+  margin: 50px 0px 0px 5px;
   
 }
 
 #navbarSupportedContentMobile li a {
-  color: darkblue;
+  color:orange;
 }
 
 #navbarSupportedContent {
@@ -357,7 +371,7 @@ h6{
 
 .zaracho {
   display: flex;
-  margin: 10px 0px 0px 110px;
+  margin: 0px 20px 0px 100px;
   font-weight: 600;
   font-size: 20px;
   z-index: 99;
@@ -367,8 +381,8 @@ h6{
 .first-conti {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
+  width: 430px;
+  height: 500px;
   margin: 60px 0px 0px 0px;
   padding-bottom: 40px;
   font-family: sans-serif;
@@ -386,7 +400,7 @@ h6{
 }
 
 .kink {
-  width: 110px;
+  width: 90px;
   height: 60px;
   border-radius: 15px;
   margin: 0px 0px 0px 0px;
@@ -418,6 +432,38 @@ h6{
   color: black;
 }
 
+.inc-dec{
+  display: flex;
+  flex-direction: column;
+}
+#inc{
+  margin-left: 30px;
+  width: 50px;
+}
+
+#dec{
+  margin-left: 90px;
+  margin-top: -37px;
+  width: 50px;
+
+}
+
+.bg{
+  width: 435px;
+}
+
+.bgg{
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  width: 100%;
+  font-size: 20px;
+  margin: 0px 0px 0px 5px;
+}
+
+#remy{
+  margin: 10px 0px 0px 20px;
+}
 
 
 

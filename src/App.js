@@ -2,6 +2,7 @@ import { Switch, BrowserRouter, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Buy from "./pages/Buy";
+import Payment from "./components/Payment";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route exact path="/buy">
           <Buy/>
+          </Route>
+          <Route exact path="/payment">
+          <Payment/>
           </Route>
         </Switch>
       </BrowserRouter>
